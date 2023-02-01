@@ -13,8 +13,7 @@ public class ClienteDTO {
     
     private String email;
     //#endregion
-    
-   
+
 
     //#region Getters e Setters
     public String getNome() {

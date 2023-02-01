@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.jw.jw_mecanica.models.Cliente;
+import com.jw.jw_mecanica.shared.ClienteDTO;
 import com.jw.jw_mecanica.repository.ClienteRepository;
 
 
@@ -21,7 +21,7 @@ public class ClienteService  {
      * @return lista de clientes
      */
      
-    public List<Cliente> getAllClientes() {
+    public List<ClienteDTO> getAllClientes() {
         //Regra entra nesse espaço
         return ClienteService.findAll();
     }
@@ -31,7 +31,7 @@ public class ClienteService  {
      * @param id id do produto a ser retornado
      * @return retorna o produto com o id passado
      */
-    public Optional<Cliente> getClienteID(long id) {
+    public Optional<ClienteDTO> getClienteID(long id) {
         return ClienteService.findById(id);  
     }
     
@@ -41,7 +41,7 @@ public class ClienteService  {
      * @return retorna o cliente adicionado
      
      */
-    public Cliente cadastrarCliente(Cliente cliente) {
+    public ClienteDTO cadastrarCliente(ClienteDTO cliente) {
         return ClienteService.save(cliente);
     }
 
@@ -58,7 +58,7 @@ public class ClienteService  {
  * @param cliente cliente a ser atualizado
  * @return retorna o cliente atualizado
  */
-public Cliente atualizarCliente(Long id, Cliente cliente) {
+public ClienteDTO atualizarCliente(Long id, ClienteDTO cliente) {
     cliente.setId(id);
     return ClienteService.save(cliente);
     
