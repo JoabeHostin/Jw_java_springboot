@@ -1,22 +1,9 @@
-package com.jw.jw_mecanica.models;
+package com.jw_mecanica.shared;
 
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-import lombok.NoArgsConstructor;
-
-@Entity
-@NoArgsConstructor
-public class Cliente {
-
-    //#region Atributos
+public class ClienteDTO {
     
-    @Id 
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    //#region Atributos
+    private Long id;
     
     private String nome;
     
@@ -26,19 +13,7 @@ public class Cliente {
     
     private String email;
     //#endregion
-    
-    //#region Construtores
-    
-    public Cliente(long id, String nome, String cpf, String telefone, String email ) {
-        super();
-        this.id = id;
-        this.nome = nome;
-        this.cpf = cpf;
-        this.telefone = telefone;
-        this.email = email;
-     
-    }
-    //#endregion
+
 
     //#region Getters e Setters
     public String getNome() {
@@ -73,11 +48,11 @@ public class Cliente {
         this.email = email;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
     //#endregion

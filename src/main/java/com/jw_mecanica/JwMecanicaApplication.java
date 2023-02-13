@@ -1,4 +1,4 @@
-package com.jw.jw_mecanica;
+package com.jw_mecanica;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
