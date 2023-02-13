@@ -1,4 +1,4 @@
-package com.jw.jw_mecanica.view.model;
+package com.jw_mecanica.view.model;
 
 public class CLienteRequest {
        //#region Atributos

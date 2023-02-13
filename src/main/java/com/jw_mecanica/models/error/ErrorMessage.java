@@ -1,4 +1,4 @@
-package com.jw.jw_mecanica.models.error;
+package com.jw_mecanica.models.error;
 
 public class ErrorMessage {
     private String titulo;

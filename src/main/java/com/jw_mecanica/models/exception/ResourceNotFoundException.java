@@ -1,4 +1,4 @@
-package com.jw.jw_mecanica.models.exception;
+package com.jw_mecanica.models.exception;
 
 import org.springframework.web.bind.annotation.ResponseStatus;
 
