@@ -3,8 +3,14 @@ package com.jw_mecanica.view.controllers;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+<<<<<<< Updated upstream
 
 
+=======
+import java.util.stream.Stream;
+
+import org.apache.catalina.mapper.Mapper;
+>>>>>>> Stashed changes
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,7 +23,12 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+<<<<<<< Updated upstream
 
+=======
+import com.jw_mecanica.models.Cliente;
+import com.jw_mecanica.service.ClienteService;
+>>>>>>> Stashed changes
 import com.jw_mecanica.shared.ClienteDTO;
 import com.jw_mecanica.view.model.CLienteRequest;
 import com.jw_mecanica.view.model.ClienteResponse;
@@ -82,4 +93,8 @@ public class ClienteController {
     }
 
     // #endregion
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
